@@ -161,7 +161,7 @@ https://github.com/raghavguglani21
 
 ## 🤖 Note
 
-This project was developed as part of my learning journey. I used AI tools for assistance with the user interface design, debugging, and documentation, while I implemented, tested, and understood the project myself.
+This project was developed as part of my learning journey. I used AI tools for assistance with the design, debugging, and to make UI, while I implemented, tested, and understood the project myself.
 
 
 ⭐ If you like this project, feel free to star the repository.
