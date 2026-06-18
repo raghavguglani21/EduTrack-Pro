@@ -1,4 +1,4 @@
-#hostel management system using sql python and file handling(txt,csv)
+#hostel management system using python and file handling(txt,csv)
 # to add student details, search student details, add teacher details, apply attendance date and class vise in csv and to view attendance report in csv file
 
 import csv
