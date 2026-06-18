@@ -34,6 +34,10 @@ This is my beginner Python project created to practice file handling, data manag
 - view class attendance report on certain date
 - view a student report and attendance percentage
 
+---
+## 🌐 Live Demo
+
+👉 https://edutrack-pro-rvpeqkmabdudozzbhna8w6.streamlit.app/
 
 ---
 
