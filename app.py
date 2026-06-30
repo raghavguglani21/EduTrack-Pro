@@ -235,10 +235,11 @@ if menu == "Dashboard":
         students.columns = [
             "Roll No",
             "Name",
-            "Class",
-            "Section",
             "Age",
-            "Attendance (%)"
+            "Section",
+            "Class",
+            "Marks",
+            "Phone No"
         ]
 
     with col1:
@@ -251,7 +252,18 @@ if menu == "Dashboard":
         st.metric("Classes", students["Class"].nunique() if len(students) > 0 else 0)
 
     st.subheader("📌 Recent Students")
-    st.dataframe(students.tail(5), use_container_width=True)
+
+    st.dataframe(
+        students[[
+            "Roll No",
+            "Name",
+            "Age",
+            "Section",
+            "Class",
+            "Phone No"
+        ]].tail(5),
+        use_container_width=True
+    )
 
 
 # Teachers Page
