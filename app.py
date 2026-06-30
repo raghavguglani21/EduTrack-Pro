@@ -230,6 +230,17 @@ if menu == "Dashboard":
     students = load_students()
     teachers = load_teachers()
 
+    # Add column names if data exists
+    if len(students) > 0:
+        students.columns = [
+            "Roll No",
+            "Name",
+            "Class",
+            "Section",
+            "Age",
+            "Attendance (%)"
+        ]
+
     with col1:
         st.metric("Students", len(students))
 
@@ -237,10 +248,10 @@ if menu == "Dashboard":
         st.metric("Teachers", len(teachers))
 
     with col3:
-        st.metric("Classes", students[4].nunique() if len(students)>0 else 0)
+        st.metric("Classes", students["Class"].nunique() if len(students) > 0 else 0)
 
     st.subheader("📌 Recent Students")
-    st.dataframe(students.tail(5))
+    st.dataframe(students.tail(5), use_container_width=True)
 
 
 # Teachers Page
